@@ -1,3 +1,30 @@
 [submodule "pack/myplugins/start/vim-airline"]
 	path = pack/myplugins/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline
+[submodule "pack/myplugins/start/goyo"]
+    path = pack/myplugins/start/goyo
+    url = https://github.com/junegunn/goyo.vim
+[submodule "pack/myplugins/start/auto-pairs"]
+    path = pack/myplugins/start/auto-pairs
+    url = https://github.com/chun-yang/auto-pairs
+[submodule "pack/myplugins/start/indentLine"]
+    path = pack/myplugins/start/indentLine
+    url = https://github.com/yggdroot/indentline
+[submodule "pack/myplugins/start/limeligth"]
+    path = pack/myplugins/start/limeligth
+    url = https://github.com/junegunn/limelight.vim
+[submodule "pack/myplugins/start/neodark"]
+    path = pack/myplugins/start/neodark
+    url = https://github.com/KeitaNakamura/neodark.vim
+[submodule "pack/myplugins/start/nerdtree"]
+    path = pack/myplugins/start/nerdtree
+    url = https://github.com/scrooloose/nerdtree
+[submodule "pack/myplugins/start/nerdtree-git-plugin"]
+    path = pack/myplugins/start/nerdtree-git-plugin
+    url = https://github.com/Xuyuanp/nerdtree-git-plugin
+[submodule "pack/myplugins/start/tagbar"]
+    path = pack/myplugins/start/tagbar
+    url = https://github.com/majutsushi/tagbar
+[submodule "pack/myplugins/start/vim-gitgutter"]
+    path = pack/myplugins/start/vim-gitgutter
+    url = https://github.com/airblade/vim-gitgutter
