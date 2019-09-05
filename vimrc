@@ -22,6 +22,7 @@ set ignorecase
 set smartcase
 set autochdir
 set cursorline
+set cursorcolumn
 set showmode
 set showcmd
 " 检测文件类型
@@ -64,7 +65,6 @@ set fileencodings=ucs-bom,utf-8,cp936
 set fileencoding=utf-8
 
 
-
 " nerdtree-git-plugin插件设置
 let g:NERDTreeIndicatorMapCustom = {
     \ "Modified"  : "✹",
@@ -81,10 +81,13 @@ let g:NERDTreeIndicatorMapCustom = {
 
 
 " indentline插件设置
+let  g:indentLine_enabled = 1
 let  g:indentLine_setColors = 0
-let  g:indentLine_color_term = 239
-let  g:indentLine_char = 'c'
+let  g:indentLine_color_term = 255
+"let  g:indentLine_char = 'c'
 let  g:indentLine_char_list = ['|', '¦', '┆', '┊']
+let  g:indentLine_concealcursor = 'inc'
+let  g:indentLine_conceallevel = 2
 
 " nerdtree插件管理
 " 自动打开nerdtree插件左侧
