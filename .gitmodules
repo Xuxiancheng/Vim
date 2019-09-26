@@ -28,3 +28,9 @@
 [submodule "pack/myplugins/start/vim-gitgutter"]
     path = pack/myplugins/start/vim-gitgutter
     url = https://github.com/airblade/vim-gitgutter
+[submodule "pack/myplugins/start/markdown"]
+	path = pack/myplugins/start/markdown
+	url = https://github.com/tpope/vim-markdown
+[submodule "pack/myplugins/start/markdown-preview"]
+	path = pack/myplugins/start/markdown-preview
+	url = https://github.com/iamcco/markdown-preview.vim.git
