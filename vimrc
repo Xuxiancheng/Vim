@@ -6,7 +6,7 @@ set number
 set relativenumber
 set laststatus=2
 set background=dark
-set termguicolors
+"set termguicolors
 set backspace=indent,eol,start
 set incsearch
 set clipboard=unnamed
@@ -43,9 +43,11 @@ set ruler
 " 主题设置 这里用的是neodark的主题
 " let g:molokai_original = 1
 colorscheme neodark 
-let g:neodark#use_256color = 1 "default:0
-let g:neodark#solid_vertsplist = 1 "default : 0
+let g:neodark#use_256color = 1 " default: 0
+let g:neodark#terminal_transparent = 1 " default: 0
 let g:lightline = {}
+let g:lightline.colorscheme = 'neodark'
+
 
 " disable ominicomplete preview
 set completeopt-=preview
@@ -194,7 +196,8 @@ let g:markdown_syntax_conceal = 0
 let g:markdown_minlines = 100
 
 " markdwon 预览
-let g:mkdp_path_to_chrome = "/Applications/Firefox.app/Contents/MacOS/firefox"
+"mac /Applications/Firefox.app/Contents/MacOS/firefox
+let g:mkdp_path_to_chrome = "/usr/bin/firefox"
 " 设置 chrome 浏览器的路径（或是启动 chrome（或其他现代浏览器）的命令）
 " 如果设置了该参数, g:mkdp_browserfunc 将被忽略
 let g:mkdp_browserfunc = 'MKDP_browserfunc_default'
@@ -222,3 +225,44 @@ nmap <silent> <F8> <Plug>MarkdownPreview        " 普通模式
 imap <silent> <F8> <Plug>MarkdownPreview        " 插入模式
 nmap <silent> <F9> <Plug>StopMarkdownPreview    " 普通模式
 imap <silent> <F9> <Plug>StopMarkdownPreview    " 插入模式
+
+
+
+"YCM插件配置
+"需要编译才可以存在
+"clang cmake python2 python3
+let g:ycm_global_ycm_extra_conf='~/.vim/pack/myplugins/start/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py'
+
+set completeopt=longest,menu    "让Vim的补全菜单行为与一般IDE一致(参考VimTip1228)
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif "离开插入模式后自动关闭预览窗口
+inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"    "回车即选中当前项
+"上下左右键的行为 会显示其他信息
+inoremap <expr> <Down>     pumvisible() ? "\<C-n>" : "\<Down>"
+inoremap <expr> <Up>       pumvisible() ? "\<C-p>" : "\<Up>"
+inoremap <expr> <PageDown> pumvisible() ? "\<PageDown>\<C-p>\<C-n>" : "\<PageDown>"
+inoremap <expr> <PageUp>   pumvisible() ? "\<PageUp>\<C-p>\<C-n>" : "\<PageUp>"
+
+"youcompleteme  默认tab  s-tab 和自动补全冲突
+"let g:ycm_key_list_select_completion=['<c-n>']
+let g:ycm_key_list_select_completion = ['<Down>']
+"let g:ycm_key_list_previous_completion=['<c-p>']
+let g:ycm_key_list_previous_completion = ['<Up>']
+let g:ycm_confirm_extra_conf=0 "关闭加载.ycm_extra_conf.py提示
+
+let g:ycm_collect_identifiers_from_tags_files=1 " 开启 YCM 基于标签引擎
+let g:ycm_min_num_of_chars_for_completion=2 " 从第2个键入字符就开始罗列匹配项
+let g:ycm_cache_omnifunc=0  " 禁止缓存匹配项,每次都重新生成匹配项
+let g:ycm_seed_identifiers_with_syntax=1    " 语法关键字补全
+nnoremap <F5> :YcmForceCompileAndDiagnostics<CR>    "force recomile with syntastic
+"nnoremap <leader>lo :lopen<CR> "open locationlist
+"nnoremap <leader>lc :lclose<CR>    "close locationlist
+inoremap <leader><leader> <C-x><C-o>
+
+"在注释输入中也能补全
+let g:ycm_complete_in_comments = 1
+"在字符串输入中也能补全
+let g:ycm_complete_in_strings = 1
+"注释和字符串中的文字也会被收入补全
+let g:ycm_collect_identifiers_from_comments_and_strings = 0
+
+nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR> " 跳转到定义处
