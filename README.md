@@ -17,9 +17,19 @@
 接下来想要添加一个第三方插件，比如 ale，只要执行：
 
 ``` shell
+
 git submodule add https://github.com/w0rp/ale.git pack/myplugins/start/ale
+
 ```
+
 升级所有第三方插件，只要执行：
+
 ``` shell
+
 git submodule update --recursive --remote
+
 ```
+
+## 插件介绍
+
+
