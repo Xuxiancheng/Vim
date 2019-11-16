@@ -30,6 +30,17 @@ git submodule update --recursive --remote
 
 ```
 
-## 插件介绍
+## 使用
 
+clone此仓库,然后运行以下命令即可将第三方插件同步:
+
+``` shell
+
+git submodule init
+
+git submodule update
+
+cp vimrc ~/.vimrc
+
+```
 
