@@ -34,3 +34,6 @@
 [submodule "pack/myplugins/start/markdown-preview"]
 	path = pack/myplugins/start/markdown-preview
 	url = https://github.com/iamcco/markdown-preview.vim.git
+[submodule "pack/myplugins/start/pangu"]
+	path = pack/myplugins/start/pangu
+	url = https://github.com/hotoo/pangu.vim.git
