@@ -40,7 +40,11 @@ git submodule init
 
 git submodule update
 
-cp vimrc ~/.vimrc
+进入到YCM安装目录:
 
-```
+git submodule update —init -recursive
+
+python3 install.py --all
+
+cp vimrc ~/.vimrc
 
