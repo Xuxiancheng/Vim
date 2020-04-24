@@ -251,7 +251,7 @@ func! CompileRunGcc()
    	elseif &filetype == 'sh'
    		:!time bash %
    	elseif &filetype == 'python'
-   		exec "!time python2.7 %"
+   		exec "!time python3.8 %"
     elseif &filetype == 'html'
         exec "!firefox % &"
     elseif &filetype == 'go'
@@ -299,3 +299,19 @@ let g:ycm_complete_in_strings = 1
 let g:ycm_collect_identifiers_from_comments_and_strings = 0
 
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR> " 跳转到定义处
+
+
+" syntastic  代码检查设置
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" 常用的方法 
+" :Errors 显示错误面板
+":lnext  到下一个错误
+":lprevious 到上一个错误
