@@ -43,3 +43,6 @@
 [submodule "pack/myplugins/start/vim-polyglot"]
 	path = pack/myplugins/start/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot.git
+[submodule "pack/myplugins/start/syntastic"]
+	path = pack/myplugins/start/syntastic
+	url = https://github.com/scrooloose/syntastic
