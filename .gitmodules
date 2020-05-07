@@ -43,3 +43,12 @@
 [submodule "pack/myplugins/start/syntastic"]
 	path = pack/myplugins/start/syntastic
 	url = https://github.com/scrooloose/syntastic
+[submodule "pack/myplugins/start/startify"]
+	path = pack/myplugins/start/startify
+	url = https://github.com/mhinz/vim-startify.git
+[submodule "pack/myplugins/start/smooth-scroll"]
+	path = pack/myplugins/start/smooth-scroll
+	url = https://github.com/terryma/vim-smooth-scroll.git
+[submodule "pack/myplugins/start/onedark"]
+	path = pack/myplugins/start/onedark
+	url = https://github.com/joshdick/onedark.vim

@@ -6,7 +6,7 @@ set number
 "相对行号
 set relativenumber
 set laststatus=2
-set background=dark
+"set background=dark
 "set termguicolors
 set backspace=indent,eol,start
 set incsearch
@@ -45,10 +45,11 @@ set ruler
 " 主题设置 这里用的是neodark的主题
 " let g:molokai_original = 1
 colorscheme neodark 
+let g:neodark#background = '#202020'
 let g:neodark#use_256color = 1 " default: 0
 let g:neodark#terminal_transparent = 1 " default: 0
 let g:lightline = {}
-let g:lightline.colorscheme = 'neodark'
+let g:lightline.colorscheme = 'onedark'
 
 "#############################################
 
