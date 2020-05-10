@@ -52,3 +52,9 @@
 [submodule "pack/myplugins/start/onedark"]
 	path = pack/myplugins/start/onedark
 	url = https://github.com/joshdick/onedark.vim
+[submodule "pack/myplugins/start/janah-theme"]
+	path = pack/myplugins/start/janah-theme
+	url = https://github.com/mhinz/vim-janah.git
+[submodule "pack/myplugins/start/tabular"]
+	path = pack/myplugins/start/tabular
+	url = https://github.com/godlygeek/tabular.git

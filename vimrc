@@ -207,7 +207,7 @@ let g:markdown_minlines = 100
 
 " markdwon 预览
 "mac /Applications/Firefox.app/Contents/MacOS/firefox
-let g:mkdp_path_to_chrome = "/Applications/Firefox.app/Contents/MacOS/firefox"
+let g:mkdp_path_to_chrome = "/usr/bin/firefox"
 " 设置 chrome 浏览器的路径（或是启动 chrome（或其他现代浏览器）的命令）
 " 如果设置了该参数, g:mkdp_browserfunc 将被忽略
 let g:mkdp_browserfunc = 'MKDP_browserfunc_default'
@@ -278,3 +278,31 @@ let g:syntastic_check_on_wq = 0
 " :Errors 显示错误面板
 ":lnext  到下一个错误
 ":lprevious 到上一个错误
+
+
+" startify 配置
+"设置书签
+"let g:startify_bookmarks            = [
+"            \ '~/Project/test.cpp',
+"            \]
+"起始页显示的列表长度
+let g:startify_files_number = 20
+"自动加载session
+let g:startify_session_autoload = 1
+"过滤列表，支持正则表达式
+let g:startify_skiplist = [
+       \ '^/tmp',
+       \ ]
+"自定义Header和Footer
+let g:startify_custom_header = [
+            \ '+------------------------------+',
+            \ '|                              |',
+            \ '|    Still waters run deep!    |',
+            \ '|                              |',
+            \ '+----------------+-------------+',
+            \]
+let g:startify_custom_footer = [
+            \ '+------------------------------+',
+            \ '|     Keep an open mind!       |',
+            \ '+----------------+-------------+',
+            \]
