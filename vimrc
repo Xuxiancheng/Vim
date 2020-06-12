@@ -6,7 +6,7 @@ set number
 "相对行号
 set relativenumber
 set laststatus=2
-"set background=dark
+set background=dark
 "set termguicolors
 set backspace=indent,eol,start
 set incsearch
@@ -40,6 +40,8 @@ set selectmode=mouse,key
 set showmatch
 set ruler
 
+autocmd ColorScheme janah highlight Normal ctermbg=235
+
 "#############################################
 
 " 主题设置 这里用的是neodark的主题
@@ -49,7 +51,7 @@ let g:neodark#background = '#202020'
 let g:neodark#use_256color = 1 " default: 0
 let g:neodark#terminal_transparent = 1 " default: 0
 let g:lightline = {}
-let g:lightline.colorscheme = 'onedark'
+let g:lightline.colorscheme = 'neodark'
 
 "#############################################
 
@@ -207,7 +209,7 @@ let g:markdown_minlines = 100
 
 " markdwon 预览
 "mac /Applications/Firefox.app/Contents/MacOS/firefox
-let g:mkdp_path_to_chrome = "/usr/bin/firefox"
+let g:mkdp_path_to_chrome = "/Applications/Firefox.app/Contents/MacOS/firefox"
 " 设置 chrome 浏览器的路径（或是启动 chrome（或其他现代浏览器）的命令）
 " 如果设置了该参数, g:mkdp_browserfunc 将被忽略
 let g:mkdp_browserfunc = 'MKDP_browserfunc_default'
@@ -306,3 +308,7 @@ let g:startify_custom_footer = [
             \ '|     Keep an open mind!       |',
             \ '+----------------+-------------+',
             \]
+
+
+" fzf设置
+set rtp+=/usr/local/opt/fzf

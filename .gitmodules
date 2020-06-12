@@ -58,3 +58,6 @@
 [submodule "pack/myplugins/start/tabular"]
 	path = pack/myplugins/start/tabular
 	url = https://github.com/godlygeek/tabular.git
+[submodule "pack/myplugins/start/fzf"]
+	path = pack/myplugins/start/fzf
+	url = https://github.com/junegunn/fzf.git
