@@ -76,7 +76,7 @@ set fileencoding=utf-8
 "############################################
 
 " nerdtree-git-plugin插件设置
-let g:NERDTreeIndicatorMapCustom = {
+let g:NERDTreeGitStatusIndicatorMapCustom = {
     \ "Modified"  : "✹",
     \ "Staged"    : "✚",
     \ "Untracked" : "✭",
