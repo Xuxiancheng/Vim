@@ -61,6 +61,9 @@
 [submodule "pack/myplugins/start/fzf"]
 	path = pack/myplugins/start/fzf
 	url = https://github.com/junegunn/fzf.git
-[submodule "pack/myplugins/start/vimshell"]
-	path = pack/myplugins/start/vimshell
-	url = https://github.com/shougo/vimshell.vim
+[submodule "pack/myplugins/start/nerdtree-syntax-highlignt"]
+	path = pack/myplugins/start/nerdtree-syntax-highlignt
+	url = https://github.com/tiagofumo/vim-nerdtree-syntax-highlight.git
+[submodule "pack/myplugins/start/devicons"]
+	path = pack/myplugins/start/devicons
+	url = https://github.com/ryanoasis/vim-devicons.git
