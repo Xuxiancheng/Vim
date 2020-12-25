@@ -21,6 +21,7 @@ set autoindent
 set wildmenu
 set ignorecase
 set smartcase
+set magic
 set autochdir
 set cursorline
 set cursorcolumn
@@ -46,7 +47,7 @@ autocmd ColorScheme janah highlight Normal ctermbg=235
 
 " 主题设置 这里用的是neodark的主题
 " let g:molokai_original = 1
-colorscheme neodark 
+colorscheme neodark
 let g:neodark#background = '#202020'
 let g:neodark#use_256color = 1 " default: 0
 let g:neodark#terminal_transparent = 1 " default: 0
@@ -101,7 +102,7 @@ let  g:indentLine_conceallevel = 2
 
 " nerdtree插件管理
 " 自动打开nerdtree插件左侧
-" autocmd vimenter * NERDTree
+"autocmd vimenter * NERDTree
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
 " ctrl+n 打开nerdtree
@@ -312,3 +313,40 @@ let g:startify_custom_footer = [
 
 " fzf设置
 set rtp+=/usr/local/opt/fzf
+
+
+" nerdtree-synntax-highlignt
+let g:WebDevIconsDisableDefaultFolderSymbolColorFromNERDTreeDir = 1
+let g:WebDevIconsDisableDefaultFileSymbolColorFromNERDTreeFile = 1
+
+" you can add these colors to your .vimrc to help customizing
+let s:brown = "905532"
+let s:aqua =  "3AFFDB"
+let s:blue = "689FB6"
+let s:darkBlue = "44788E"
+let s:purple = "834F79"
+let s:lightPurple = "834F79"
+let s:red = "AE403F"
+let s:beige = "F5C06F"
+let s:yellow = "F09F17"
+let s:orange = "D4843E"
+let s:darkOrange = "F16529"
+let s:pink = "CB6F6F"
+let s:salmon = "EE6E73"
+let s:green = "8FAA54"
+let s:lightGreen = "31B53E"
+let s:white = "FFFFFF"
+let s:rspec_red = 'FE405F'
+let s:git_orange = 'F54D27'
+
+let g:NERDTreeExtensionHighlightColor = {} " this line is needed to avoid error
+let g:NERDTreeExtensionHighlightColor['css'] = s:blue " sets the color of css files to blue
+
+let g:NERDTreeExactMatchHighlightColor = {} " this line is needed to avoid error
+let g:NERDTreeExactMatchHighlightColor['.gitignore'] = s:git_orange " sets the color for .gitignore files
+
+let g:NERDTreePatternMatchHighlightColor = {} " this line is needed to avoid error
+let g:NERDTreePatternMatchHighlightColor['.*_spec\.rb$'] = s:rspec_red " sets the color for files ending with _spec.rb
+
+let g:WebDevIconsDefaultFolderSymbolColor = s:beige " sets the color for folders that did not match any rule
+let g:WebDevIconsDefaultFileSymbolColor = s:blue " sets the color for files that did not match any rule
