@@ -61,3 +61,6 @@
 [submodule "pack/myplugins/start/fzf"]
 	path = pack/myplugins/start/fzf
 	url = https://github.com/junegunn/fzf.git
+[submodule "pack/myplugins/start/vimshell"]
+	path = pack/myplugins/start/vimshell
+	url = https://github.com/shougo/vimshell.vim
