@@ -67,3 +67,6 @@
 [submodule "pack/myplugins/start/devicons"]
 	path = pack/myplugins/start/devicons
 	url = https://github.com/ryanoasis/vim-devicons.git
+[submodule "pack/myplugins/start/tabnine"]
+	path = pack/myplugins/start/tabnine
+	url = https://github.com/codota/tabnine-vim.git
