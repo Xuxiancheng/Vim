@@ -37,3 +37,15 @@ git submodule update
 
 cp vimrc ~/.vimrc
 ```
+
+## vim-plug插件
+
+增加了vim-plug插件，并且替换了国内的镜像，加快下载速度
+
+``` shell
+cp vim-plug/autoload/plug.vim  ~/.vim/autoload/plug.vim
+cp vim-plug/vimrc  ~/.vimrc
+
+#打开终端
+PlugInstall
+```
