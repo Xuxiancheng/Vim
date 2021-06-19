@@ -67,3 +67,12 @@
 [submodule "pack/myplugins/start/devicons"]
 	path = pack/myplugins/start/devicons
 	url = https://github.com/ryanoasis/vim-devicons.git
+[submodule "pack/myplugins/start/gruvbox"]
+	path = pack/myplugins/start/gruvbox
+	url = https://github.com/morhetz/gruvbox
+[submodule "pack/myplugins/start/coc"]
+	path = pack/myplugins/start/coc
+	url = https://github.com/neoclide/coc.nvim
+[submodule "pack/myplugins/start/space-vim-dark"]
+	path = pack/myplugins/start/space-vim-dark
+	url = https://github.com/liuchengxu/space-vim-dark
