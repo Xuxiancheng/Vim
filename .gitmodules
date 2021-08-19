@@ -49,9 +49,6 @@
 [submodule "pack/myplugins/start/smooth-scroll"]
 	path = pack/myplugins/start/smooth-scroll
 	url = https://github.com/terryma/vim-smooth-scroll.git
-[submodule "pack/myplugins/start/onedark"]
-	path = pack/myplugins/start/onedark
-	url = https://github.com/joshdick/onedark.vim
 [submodule "pack/myplugins/start/janah-theme"]
 	path = pack/myplugins/start/janah-theme
 	url = https://github.com/mhinz/vim-janah.git
@@ -70,9 +67,9 @@
 [submodule "pack/myplugins/start/gruvbox"]
 	path = pack/myplugins/start/gruvbox
 	url = https://github.com/morhetz/gruvbox
-[submodule "pack/myplugins/start/coc"]
-	path = pack/myplugins/start/coc
-	url = https://github.com/neoclide/coc.nvim
 [submodule "pack/myplugins/start/space-vim-dark"]
 	path = pack/myplugins/start/space-vim-dark
 	url = https://github.com/liuchengxu/space-vim-dark
+[submodule "pack/myplugins/start/coc"]
+	path = pack/myplugins/start/coc
+	url = https://github.com/neoclide/coc.nvim.git
